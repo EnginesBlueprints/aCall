@@ -21,7 +21,7 @@
         "title": "aCell"
       }
     },
-    "timestamp": "2018-05-21T15:48:15+10:00"
+    "timestamp": "2018-05-21T16:55:59+10:00"
   },
   "software": {
     "base": {
@@ -48,6 +48,15 @@
         "destination": "./",
         "extraction_command": "git",
         "path_to_extracted": "a_cell"
+      }
+    ],
+    "environment_variables": [
+      {
+        "name": "RACK_ENV",
+        "value": "production",
+        "input": {
+          "type": "string"
+        }
       }
     ],
     "file_write_permissions": [
