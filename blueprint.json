@@ -21,7 +21,7 @@
         "title": "aCell"
       }
     },
-    "timestamp": "2018-05-21T16:55:59+10:00"
+    "timestamp": "2018-05-21T17:00:53+10:00"
   },
   "software": {
     "base": {
@@ -29,6 +29,7 @@
       "framework": "sinatra",
       "deployment_type": "web",
       "http_protocol": "https_and_http",
+      "framework_port_override": 3000,
       "continuous_deployment": true,
       "memory": {
         "required": 96,
