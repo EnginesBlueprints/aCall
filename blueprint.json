@@ -21,7 +21,7 @@
         "title": "aCell"
       }
     },
-    "timestamp": "2018-05-21T15:45:19+10:00"
+    "timestamp": "2018-05-21T15:48:15+10:00"
   },
   "software": {
     "base": {
@@ -48,6 +48,12 @@
         "destination": "./",
         "extraction_command": "git",
         "path_to_extracted": "a_cell"
+      }
+    ],
+    "file_write_permissions": [
+      {
+        "path": "/home/app/",
+        "recursive": true
       }
     ]
   }
