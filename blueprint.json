@@ -15,12 +15,40 @@
         "level": "alpha",
         "patch": 0
       }
-    }
+    },
+    "software": {
+      "display": {
+        "title": "aCell"
+      }
+    },
+    "timestamp": "2018-05-21T15:29:46+10:00"
   },
   "software": {
     "base": {
+      "name": "acell",
+      "framework": "sinatra",
       "deployment_type": "web",
-      "http_protocol": "https_and_http"
-    }
+      "http_protocol": "https_and_http",
+      "continuous_deployment": true,
+      "memory": {
+        "required": 96,
+        "recommended": 128
+      }
+    },
+    "scripts": {
+      "start": {
+        "language": "sh",
+        "content": "#!/bin/bash\r\n\r\ncd /home/app\r\ngit pull\r\nbundle --standalone\r\n\r\nbundle exec thin start\r\n"
+      }
+    },
+    "installed_packages": [
+      {
+        "name": "aCell",
+        "source_url": "https://github.com/lachdoug/aCell.git",
+        "destination": " /home/app/",
+        "extraction_command": "git",
+        "path_to_extracted": "aCell"
+      }
+    ]
   }
 }
